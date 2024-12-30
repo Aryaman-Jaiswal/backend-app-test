@@ -45,6 +45,9 @@ app.get('/', (req, res) => {
 app.get('/youtube', (req, res) => {
     res.send('bello youtube')
 })
+app.get('/github', (req, res) => {
+  res.json(githubData)
+})
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
